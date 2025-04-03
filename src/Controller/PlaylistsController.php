@@ -36,7 +36,7 @@ class PlaylistsController extends AbstractController {
      * 
      * @var CategorieRepository
      */
-    private $categorieRepository;    
+    private $categorieRepository;
     
     /**
      * Création du constructeur
@@ -64,7 +64,7 @@ class PlaylistsController extends AbstractController {
         $categories = $this->categorieRepository->findAll();
         return $this->render("pages/playlists.html.twig", [
             'playlists' => $playlists,
-            'categories' => $categories            
+            'categories' => $categories
         ]);
     }
 
@@ -89,10 +89,9 @@ class PlaylistsController extends AbstractController {
         $categories = $this->categorieRepository->findAll();
         return $this->render(PLAYLISTSPATH, [
             'playlists' => $playlists,
-            'categories' => $categories            
+            'categories' => $categories
         ]);
-    }         
-    
+    }
     /**
      * Récupère les enregistrements selon le $champ et la $valeur
      * Et selon le $champ et la $valeur si autre $table
@@ -113,11 +112,11 @@ class PlaylistsController extends AbstractController {
             $categories = $this->categorieRepository->findAll();
             return $this->render(PLAYLISTSPATH, [
                'playlists' => $playlists,
-               'categories' => $categories,            
+               'categories' => $categories,
                'valeur' => $valeur,
                'table' => $table
-            ]);  
-    }  
+            ]);
+    }
     
     /**
      * Récupère les enregistrements des playlists individuelles
@@ -134,7 +133,7 @@ class PlaylistsController extends AbstractController {
             'playlist' => $playlist,
             'playlistcategories' => $playlistCategories,
             'playlistformations' => $playlistFormations
-        ]);        
-    }       
+        ]);
+    }
     
 }

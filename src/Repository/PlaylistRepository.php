@@ -23,7 +23,7 @@ define("FCATEGORIES", "f.categories");
  * @method Playlist[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
 class PlaylistRepository extends ServiceEntityRepository
-{       
+{
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, Playlist::class);
@@ -85,7 +85,7 @@ class PlaylistRepository extends ServiceEntityRepository
     public function findByContainValue($champ, $valeur): array{
         if($valeur==""){
             return $this->findAllOrderByName('ASC');
-        } else {      
+        } else {
             return $this->createQueryBuilder('p')
                         ->leftjoin(PFORMATIONS, 'f')
                         ->where('p.'.$champ.' LIKE :valeur')
@@ -102,13 +102,13 @@ class PlaylistRepository extends ServiceEntityRepository
      * Et "table" en paramètre
      * @param type $champ
      * @param type $valeur
-     * @param type $table 
+     * @param type $table
      * @return Playlist[]
-     */    
+     */
     public function findByContainValueTable($champ, $valeur, $table): array{
         if($valeur==""){
             return $this->findAllOrderByName('ASC');
-        } else {  
+        } else {
         return $this->createQueryBuilder('p')
                     ->leftjoin(PFORMATIONS, 'f')
                     ->leftjoin(FCATEGORIES, 'c')
@@ -117,10 +117,10 @@ class PlaylistRepository extends ServiceEntityRepository
                     ->groupBy('p.id')
                     ->orderBy('p.name', 'ASC')
                     ->getQuery()
-                    ->getResult();              
+                    ->getResult();
             
-        }           
-    }    
+        }
+    }
     
 
 }

@@ -39,6 +39,17 @@ class CategorieRepository extends ServiceEntityRepository
             $this->getEntityManager()->flush();
         }
     }
+
+    public function findAllWithFormationCount(): array
+    {
+        return $this->createQueryBuilder('c')
+            ->select('c.id, c.name, COUNT(f.id) as formationCount')
+            ->leftJoin('c.formations', 'f')
+            ->groupBy('c.id, c.name')
+            ->orderBy('c.name', 'ASC')
+            ->getQuery()
+            ->getResult();
+    }
     
     /**
      * Retourne la liste des catégories des formations d'une playlist
