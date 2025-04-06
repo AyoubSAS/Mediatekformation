@@ -12,7 +12,8 @@ La partie du haut contient une bannière (logo, nom et phrase présentant le but
 Le centre contient un texte de présentation avec, entre autres, les liens pour accéder aux 2 autres pages principales.<br>
 La partie basse contient les 2 dernières formations mises en ligne. Cliquer sur une image permet d'accéder à la page de présentation de la formation.<br>
 Le bas de page contient un lien pour accéder à la page des CGU : ce lien est présent en bas de chaque page excepté la page des CGU.<br>
-![image](https://github.com/user-attachments/assets/bc3955da-4c3d-4593-b184-0c41d61a3b29)
+![image](https://github.com/user-attachments/assets/a6c3edd3-6ff9-45b1-9ad4-77ca12c46997)
+
 
 
 ### Les playlists
