@@ -24,6 +24,9 @@ define("FCATEGORIES", "f.categories");
  */
 class PlaylistRepository extends ServiceEntityRepository
 {
+    private const FORMATIONS_RELATION = 'p.formations';
+    private const CATEGORIES_RELATION = 'f.categories';
+
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, Playlist::class);
@@ -120,6 +123,32 @@ class PlaylistRepository extends ServiceEntityRepository
                     ->getResult();
             
         }
+    }
+
+    public function findAllWithFormationCount(string $sortBy = 'name', string $order = 'ASC'): array
+    {
+        // Valider l'ordre de tri
+        $order = strtoupper($order) === 'DESC' ? 'DESC' : 'ASC';
+
+        $qb = $this->createQueryBuilder('p')
+            // Sélectionner l'objet playlist complet ET le compte des formations
+            ->select('p as playlist', 'COUNT(f.id) as formationCount')
+            // Joindre les formations (adaptez 'formations' si la relation a un autre nom)
+            ->leftJoin(self::FORMATIONS_RELATION, 'f')
+            ->groupBy('p.id'); // Grouper par playlist pour que COUNT fonctionne correctement
+
+        // Appliquer le tri demandé
+        if ($sortBy === 'formationCount') {
+            $qb->orderBy('formationCount', $order);
+            // Ajouter un tri secondaire par nom pour la cohérence si les comptes sont égaux
+            $qb->addOrderBy('p.name', 'ASC');
+        } else { // Tri par défaut ou par nom ('name')
+            // Adaptez 'p.name' si le champ nom dans votre entité Playlist s'appelle différemment
+            $qb->orderBy('p.name', $order);
+        }
+
+        // Exécuter la requête et retourner les résultats
+        return $qb->getQuery()->getResult();
     }
     
 

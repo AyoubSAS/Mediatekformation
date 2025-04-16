@@ -6,7 +6,7 @@
     <th class="text-end align-middle" scope="col">
         <form class="form-inline mt-1" method="POST" action="{{ path('admin.categorie.ajout') }}">
             <div class="text-end form-group mr-1 mb-2">
-                <input type="text" class="sm" name="name">
+                <input type="text" class="sm" name="name" required>
                 <input type="hidden" name="_token" value="{{ csrf_token('filtre_name') }}">
                     <button type ="submit" class="btn btn-primary mb-2 btn-sm">Ajouter une catégorie</button>
             </div>
@@ -44,6 +44,8 @@
                     <td class="text-left">
                         {% for formation in categorie.formations %}
                             {{ formation.title }}<br />
+                        {% else %}
+                            Aucune formation dans cette catégorie
                         {% endfor %}
                     </td>
                     <td>{# Condition pour réaliser la suppression d'une catégorie si elle ne contient aucune formation#}

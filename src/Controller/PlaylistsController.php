@@ -14,26 +14,27 @@ define("PLAYLISTSPATH", "pages/playlists.html.twig");
 
 /**
  * Gère les routes de la page des playlists
- *
- * 
  */
 
 class PlaylistsController extends AbstractController {
+
+    private const TEMPLATE_PLAYLISTS = "pages/playlists.html.twig";
+    private const TEMPLATE_PLAYLIST = "pages/playlist.html.twig";
     
     /**
-     * 
+     *
      * @var PlaylistRepository
      */
     private $playlistRepository;
     
     /**
-     * 
+     *
      * @var FormationRepository
      */
     private $formationRepository;
     
     /**
-     * 
+     *
      * @var CategorieRepository
      */
     private $categorieRepository;

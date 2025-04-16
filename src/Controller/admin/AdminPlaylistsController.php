@@ -125,7 +125,7 @@ class AdminPlaylistsController extends AbstractController {
      * @param string $champ  Le champ à trier
      * @param string $ordre  L'ordre de tri
      * @return Response
-     */    
+     */
     #[Route("/admin/playlists/tri/{champ}/{ordre}", name:"admin.playlists.sort")]
     public function sort($champ, $ordre): Response{
         switch($champ){
@@ -140,7 +140,7 @@ class AdminPlaylistsController extends AbstractController {
         return $this->render(self::PAGES_PLAYLISTS, [
 
             'playlists' => $playlists,
-            'categories' => $categories,     
+            'categories' => $categories,
         ]);
     }
 
@@ -164,7 +164,7 @@ class AdminPlaylistsController extends AbstractController {
             $categories = $this->categorieRepository->findAll();
             return $this->render(self::PAGES_PLAYLISTS, [
                'playlists' => $playlists,
-               'categories' => $categories,            
+               'categories' => $categories,
                'valeur' => $valeur,
                'table' => $table,
             ]);

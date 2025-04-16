@@ -1,3 +1,4 @@
+{# templates/base.html.twig #}
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -9,9 +10,9 @@
     </head>
     <body>
         <!-- entête -->
-        <div class="container text-end">
+        <div class="container text-end pt-2 pb-2">
             {% if app.user %}
-                <a href="{{ path('logout') }}">se déconnecter</a>
+                <a href="{{ path('logout') }}" class="btn btn-danger btn-sm">Se déconnecter</a>
             {% endif %}
         </div>
         {% block top %}{% endblock %}
