@@ -12,45 +12,44 @@ La partie du haut contient une bannière (logo, nom et phrase présentant le but
 Le centre contient un texte de présentation avec, entre autres, les liens pour accéder aux 2 autres pages principales.<br>
 La partie basse contient les 2 dernières formations mises en ligne. Cliquer sur une image permet d'accéder à la page de présentation de la formation.<br>
 Le bas de page contient un lien pour accéder à la page des CGU : ce lien est présent en bas de chaque page excepté la page des CGU.<br>
-![image](![image](https://github.com/user-attachments/assets/1e24f6c2-2b2a-467c-8cb8-fef2bc25bc26))
+![image](https://github.com/user-attachments/assets/1e24f6c2-2b2a-467c-8cb8-fef2bc25bc26)
 
 
 
 ### Les playlists
-![image](![image](https://github.com/user-attachments/assets/a07802dd-4b79-4c00-83df-38aeb238e4d3)
-)
+![image](https://github.com/user-attachments/assets/a07802dd-4b79-4c00-83df-38aeb238e4d3)
 
 
 ### Détail d'une playlist
-![image](![image](https://github.com/user-attachments/assets/741bedae-ba03-4a64-bde6-f462388e348d)
-)
+![image](https://github.com/user-attachments/assets/741bedae-ba03-4a64-bde6-f462388e348d)
+
 
 ## Back office
 ### Login
 
-![image](![image](https://github.com/user-attachments/assets/2d2e1b75-d39d-4b41-90e5-189b7f5d77bb)
-6)
+![image](https://github.com/user-attachments/assets/2d2e1b75-d39d-4b41-90e5-189b7f5d77bb)
+
 ### Les formations
 
-![image](![image](https://github.com/user-attachments/assets/6a73391b-98b3-4a52-b321-7831e0b68252)
-)
+![image](https://github.com/user-attachments/assets/6a73391b-98b3-4a52-b321-7831e0b68252)
+
 
 
 ### Modifier une formation
 
-![image](![image](https://github.com/user-attachments/assets/6fd3db68-7cb4-44d2-b36d-7db88a1f75c3)
-)
+![image](https://github.com/user-attachments/assets/6fd3db68-7cb4-44d2-b36d-7db88a1f75c3)
+
 
 ### Playlist
-![image](![image](https://github.com/user-attachments/assets/24137ffb-55d0-4a37-85d2-16edb8ea555c)
-)
+![image](https://github.com/user-attachments/assets/24137ffb-55d0-4a37-85d2-16edb8ea555c)
+
 ### Ajouter une playlist
-![image](![image](https://github.com/user-attachments/assets/583895c9-e60a-4c6b-aec2-8ca283cbb4cd)
-)
+![image](https://github.com/user-attachments/assets/583895c9-e60a-4c6b-aec2-8ca283cbb4cd)
+
 
 ### Catégories 
-![image](![image](https://github.com/user-attachments/assets/04ab7c54-fb59-453e-bb91-a0f036590bbe)
-)
+![image](https://github.com/user-attachments/assets/04ab7c54-fb59-453e-bb91-a0f036590bbe)
+
 
 
 ## Test de l'application en local
