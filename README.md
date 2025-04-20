@@ -12,41 +12,49 @@ La partie du haut contient une bannière (logo, nom et phrase présentant le but
 Le centre contient un texte de présentation avec, entre autres, les liens pour accéder aux 2 autres pages principales.<br>
 La partie basse contient les 2 dernières formations mises en ligne. Cliquer sur une image permet d'accéder à la page de présentation de la formation.<br>
 Le bas de page contient un lien pour accéder à la page des CGU : ce lien est présent en bas de chaque page excepté la page des CGU.<br>
-![image](https://github.com/user-attachments/assets/a6c3edd3-6ff9-45b1-9ad4-77ca12c46997)
+![image](![image](https://github.com/user-attachments/assets/1e24f6c2-2b2a-467c-8cb8-fef2bc25bc26))
 
 
 
 ### Les playlists
-![image](https://github.com/user-attachments/assets/2aac0001-4a85-4959-8b04-25bd12ce314f)
+![image](![image](https://github.com/user-attachments/assets/a07802dd-4b79-4c00-83df-38aeb238e4d3)
+)
 
 
 ### Détail d'une playlist
-![image](https://github.com/user-attachments/assets/7cb8d027-d9ba-4644-9988-08f253d5d814)
+![image](![image](https://github.com/user-attachments/assets/741bedae-ba03-4a64-bde6-f462388e348d)
+)
 
 ## Back office
 ### Login
 
-![image](https://github.com/user-attachments/assets/b746b65c-fce0-40d3-8c84-ea28d73cd886)
+![image](![image](https://github.com/user-attachments/assets/2d2e1b75-d39d-4b41-90e5-189b7f5d77bb)
+6)
 ### Les formations
 
-![image](https://github.com/user-attachments/assets/e5db89a0-86ab-4d3f-a7e1-1e19a7777eac)
+![image](![image](https://github.com/user-attachments/assets/6a73391b-98b3-4a52-b321-7831e0b68252)
+)
 
 
 ### Modifier une formation
 
-![image](https://github.com/user-attachments/assets/50faff20-6c2e-4201-977e-a886299376f7)
+![image](![image](https://github.com/user-attachments/assets/6fd3db68-7cb4-44d2-b36d-7db88a1f75c3)
+)
 
 ### Playlist
-![image](https://github.com/user-attachments/assets/08dd9970-636c-470f-999e-719793a261a9)
+![image](![image](https://github.com/user-attachments/assets/24137ffb-55d0-4a37-85d2-16edb8ea555c)
+)
 ### Ajouter une playlist
-![image](https://github.com/user-attachments/assets/1631e6fe-b396-4090-bf06-cabf75ddd8df)
+![image](![image](https://github.com/user-attachments/assets/583895c9-e60a-4c6b-aec2-8ca283cbb4cd)
+)
 
 ### Catégories 
-![image](https://github.com/user-attachments/assets/bc62e4b9-fe2a-4384-9508-d4e99ac4d8ab)
+![image](![image](https://github.com/user-attachments/assets/04ab7c54-fb59-453e-bb91-a0f036590bbe)
+)
 
 
 ## Test de l'application en local
-dievart.alwaysdata.net
+http://mediatekformationas.atwebpages.com
 - Vérifier que Composer, Git et Wamserver (ou équivalent) sont installés sur l'ordinateur.
 - Télécharger le code et le dézipper dans www de Wampserver (ou dossier équivalent) puis renommer le dossier en "mediatekformation".<br>
 - Ouvrir une fenêtre de commandes en mode admin, se positionner dans le dossier du projet et taper "composer install" pour reconstituer le dossier vendor.<br>
