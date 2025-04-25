@@ -13,7 +13,7 @@ jobs:
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          server: ftp://4621130@f30-preview.awardspace.net/
+          server: sftp://4621130@f30-preview.awardspace.net:221/
           server-dir: /MediatekFormation/
           username: 4621130
           password: ${{ secrets.ftp_password }}
