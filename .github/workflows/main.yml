@@ -14,6 +14,6 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: ftp://4621130@f30-preview.awardspace.net/
-          server-dir: /home/www/mediatekformationas.atwebpages.com/
+          server-dir: /MediatekFormation/
           username: 4621130
           password: ${{ secrets.ftp_password }}
